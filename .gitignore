@@ -1,0 +1,64 @@
+# ── Secrets & local config ───────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ── Python ───────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+wheels/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+MANIFEST
+.installed.cfg
+
+# ── Virtual environments ─────────────────────────────────────────────────
+.venv/
+venv/
+ENV/
+env/
+
+# ── Testing, linting, typing ─────────────────────────────────────────────
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+tox.ini
+.tox/
+
+# ── FluffBrowser runtime artefacts ───────────────────────────────────────
+logs/
+*.log
+screenshots/
+downloads/
+browser_profile/
+user_data/
+browser_use_data/
+tmp/
+.cache/
+.agent_history/
+
+# ── Editors & IDEs ───────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# ── OS noise ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/

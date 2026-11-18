@@ -1,0 +1,39 @@
+name: Feature request
+description: An idea that would make FluffBrowser nicer.
+title: "[feat]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does it solve?
+      placeholder: Long tasks hit MAX_STEPS and I have to restart them from scratch.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Your idea
+      placeholder: Allow continuing the last task with a "continue" command.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Interface / design
+        - Agent behaviour
+        - Configuration
+        - Browser control
+        - Documentation
+        - Packaging / launcher
+    validations:
+      required: true
+  - type: checkboxes
+    id: design
+    attributes:
+      label: Design promise
+      options:
+        - label: I understand the beige/cream design language stays intact
+          required: true
